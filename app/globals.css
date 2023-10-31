@@ -31,3 +31,6 @@ button{
   color: black;
 
 }
+*{
+  box-sizing: border-box;
+}

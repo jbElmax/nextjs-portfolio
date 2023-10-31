@@ -4,13 +4,14 @@ import DesignImg from '../public/design.png';
 import FrontendImg from '../public/frontend.png';
 import BackEndImg from '../public/backend.png';
 import DevelopImg from '../public/develop.png';
+import ImageCard from './components/image-card/image-card.component';
 
 export default function Home() {
   return (
-    <div className='flex lg:flex-row flex-col lg:justify-between mt-[30px]'>
+    <div className='flex lg:flex-row flex-col lg:justify-between mt-[30px] pb-[60px] lg:pb-[10px]'>
      
-        <div className='w-[350px] lg:w-[560px] xl:w-[600px] px-2 items-center flex flex-col lg:mr-[10px] mx-auto lg:mx-8 xl:mx-20'>
-          <p className='leading-loose text-justify'>
+        <div className='w-[350px] lg:w-[600px] xl:w-[600px] px-2 items-center flex flex-col mx-auto lg:mx-4 xl:mx-20'>
+          <p className='leading-loose text-justify text-gray-700'>
             <span className='text-xl'>I am an accomplished software developer with over 8 years of experience in a diverse range of technologies.</span> My skills encompass WinForms, ASP.NET (both Web Forms and Core), jQuery, Android Java, and the modern web development stack, including React, Next.js, and Tailwind CSS.
 
             Throughout my career, I have taken pride in crafting software solutions that are not only highly functional but also intuitively designed for a seamless user experience. 
@@ -19,20 +20,20 @@ export default function Home() {
 
             Let us team up and bring your software projects to life!
           </p>
-          <button className='rounded border border-gray-700 px-2 py-2 mt-[15px]'>{"Let's Talk"}</button>
+          <button className='rounded border border-gray-700 px-2 py-2 mt-[15px] hover:bg-teal-100'>{"Let's Talk"}</button>
         </div>
-        <div className='grid grid-cols-1 lg:grid-cols-2  gap-4 lg:gap-6 lg:mb-[15px] mt-[20px] lg:mt-0 mx-auto lg:mx-8 xl:mx-20 items-center'>
-         
-            <Image src={DesignImg} alt='design image' className=' w-[278px] h-[261px] object-cover rounded'/>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 lg:pb-[20px] mt-[20px] lg:-mt-4 mx-auto lg:mx-4 xl:mx-20 items-center'>
+            
+            <ImageCard imgSrc={DesignImg} altLabel='design image' label='Design'/>
         
           
-            <Image src={FrontendImg} alt='frontend image' className=' w-[278px] h-[261px] object-cover rounded'/>
+            <ImageCard imgSrc={FrontendImg} altLabel='frontend image' label='Front-end'/>
           
          
-            <Image src={FrontendImg} alt='backend image' className=' w-[278px] h-[261px] object-cover rounded'/>
+            <ImageCard imgSrc={BackEndImg} altLabel='backend image' label='Back-end'/>
          
          
-            <Image src={FrontendImg} alt='frontend image' className=' w-[278px] h-[261px] object-cover rounded'/>
+            <ImageCard imgSrc={DevelopImg} altLabel='frontend image' label='Develop'/>
          
         </div>
 

@@ -10,11 +10,11 @@ const Navigation = ()=>{
                 <h1 className="text-gray-700 text-xl">Jan Elnas</h1>
             </div>
             <div className="flex lg:flex-row flex-col lg:gap-x-6 gap-y-2 place-items-center mt-[10px] lg:mt-0">
-                <Link href="/work-experience">Work Experience</Link>
-                <Link href="">Projects</Link>
-                <Link href="">Skills</Link>
-                <Link href="">Education</Link>
-                <Link href="">Contacts</Link>
+                <Link href="/work-experience" className="hover:underline hover:text-black text-gray-700">Work Experience</Link>
+                <Link href="" className="hover:underline hover:text-black text-gray-700">Projects</Link>
+                <Link href="" className="hover:underline hover:text-black text-gray-700">Skills</Link>
+                <Link href="" className="hover:underline hover:text-black text-gray-700">Education</Link>
+                <Link href="" className="hover:underline hover:text-black text-gray-700">Contacts</Link>
             </div>
         </div>
     )
