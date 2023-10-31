@@ -15,7 +15,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  padding: 1rem;
+  width: 100%;
 
 }
 p{
