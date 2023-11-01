@@ -1,10 +1,8 @@
-import Image, { StaticImageData } from 'next/image'
-import Link from 'next/link'
 import DesignImg from '../public/design.png';
 import FrontendImg from '../public/frontend.png';
 import BackEndImg from '../public/backend.png';
 import DevelopImg from '../public/develop.png';
-import ImageCard from './components/image-card/image-card.component';
+
 import IntroCard from './components/intro-card/intro-card.component';
 import ImageCardProp from './components/image-container/type/image-card-type';
 import ImageContainer from './components/image-container/image-container.component';
@@ -43,7 +41,6 @@ export default function Home() {
         <ImageContainer data={imageCardArray}/>
 
       </div>
-  
-    
+   
   )
 }

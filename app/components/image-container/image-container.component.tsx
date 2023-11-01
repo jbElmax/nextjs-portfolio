@@ -1,4 +1,3 @@
-import { StaticImageData } from "next/image";
 import ImageCard from "../image-card/image-card.component";
 import ImageCardProp from "./type/image-card-type";
 

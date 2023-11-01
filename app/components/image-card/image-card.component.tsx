@@ -1,5 +1,4 @@
 import Image, { StaticImageData } from "next/image";
-import { FunctionComponent } from "react";
 
 interface ImageProp{
     imgSrc:StaticImageData,
