@@ -2,15 +2,18 @@ import ImageCard from "../image-card/image-card.component";
 import ImageCardProp from "./type/image-card-type";
 
 interface Props{
-    data:ImageCardProp[]
+    data:ImageCardProp[],
+    className:string
+    
 }
 
-const ImageContainer:React.FC<Props> = ({data})=>{
+const ImageContainer:React.FC<Props> = ({data,className})=>{
+   
     return(
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 lg:pb-[20px] mt-[20px] lg:-mt-4 mx-auto lg:mx-4 xl:mx-20 items-center'>
+        <div className={className}>
         {data.map((cardData,index)=>{
             return(
-                <ImageCard key={index} imgSrc={cardData.imageData} altLabel={cardData.altLabel} label={cardData.imageLabel} />
+                <ImageCard key={index} imageData={cardData.imageData} altLabel={cardData.altLabel} cardClass={cardData.cardClass} imageLabel={cardData.imageLabel}/>
             )
         })}    
     

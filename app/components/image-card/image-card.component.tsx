@@ -1,17 +1,18 @@
 import Image, { StaticImageData } from "next/image";
-
+import ImageCardProp from "../image-container/type/image-card-type";
 interface ImageProp{
-    imgSrc:StaticImageData,
-    label:string,
-    altLabel:string
+    imageData:StaticImageData,
+    altLabel:string,
+    cardClass:string,
+    imageLabel:string
 }
 
-const ImageCard:React.FC<ImageProp>=({imgSrc,label,altLabel})=>
+const ImageCard:React.FC<ImageProp>=({imageData,altLabel,cardClass,imageLabel})=>
 {
     return(
         <div className="flex flex-col">
-            <Image src={imgSrc} alt={altLabel} className=' w-[278px] h-[220px] object-cover rounded'/>
-            <label className="text-gray-700 text-center">{label}</label>
+            <Image src={imageData} alt={altLabel} className={cardClass}/>
+            <label className="text-gray-700 text-center">{imageLabel}</label>
         </div>
     )
 }
