@@ -13,25 +13,25 @@ const workImages:ImageCardProp[] = [
     imageData:VbNetImg,
     altLabel:'vbnet image',
     imageLabel:'',
-    cardClass:'w-[150px] h-[100px] object-cover'
+    cardClass:'w-[150px] h-[100px] object-cover transform scale-100 hover:scale-110 transition-transform duration-300'
   },
   {
     imageData:JavaImg,
     altLabel:'android java image',
     imageLabel:'',
-    cardClass:'w-[150px] h-[80px] object-cover'
+    cardClass:'w-[150px] h-[80px] object-cover transform scale-100 hover:scale-110 transition-transform duration-300'
   },
   {
     imageData:NetCoreImg,
     altLabel:'.net core image',
     imageLabel:'',
-    cardClass:'w-[120px] h-[100px] object-fit'
+    cardClass:'w-[120px] h-[100px] object-fit transform scale-100 hover:scale-110 transition-transform duration-300'
   },
   {
     imageData:ReactImg,
     altLabel:'react image',
     imageLabel:'',
-    cardClass:'w-[100px] h-[100px] object-cover'
+    cardClass:'w-[100px] h-[100px] object-cover transform scale-100 hover:scale-110 transition-transform duration-300'
   },
 ]
 const WorkExperiencePage = () => {

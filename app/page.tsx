@@ -13,25 +13,25 @@ const imageCardArray:ImageCardProp[] = [
     imageData:DesignImg,
     altLabel:'design image',
     imageLabel:'Design',
-    cardClass:'w-[250px] h-[200px] object-cover'
+    cardClass:'w-[250px] h-[200px] object-cover transform scale-100 hover:scale-110 transition-transform duration-300'
   },
   {
     imageData:FrontendImg,
     altLabel:'frontend image',
     imageLabel:'Front-end',
-    cardClass:'w-[250px] h-[200px] object-cover'
+    cardClass:'w-[250px] h-[200px] object-cover transform scale-100 hover:scale-110 transition-transform duration-300'
   },
   {
     imageData:BackEndImg,
     altLabel:'back-end image',
-    imageLabel:'Back-end',
-    cardClass:'w-[250px] h-[200px] object-cover'
+    imageLabel:'Back-end', 
+    cardClass:'w-[250px] h-[200px] object-cover transform scale-100 hover:scale-110 transition-transform duration-300'
   },
   {
     imageData:DevelopImg,
     altLabel:'develop image',
     imageLabel:'Develop',
-    cardClass:'w-[250px] h-[200px] object-cover'
+    cardClass:'w-[250px] h-[200px] object-cover transform scale-100 hover:scale-110 transition-transform duration-300'
   }
 
 ]
