@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 const IntroCard = ()=>{
     return(
@@ -11,7 +12,7 @@ const IntroCard = ()=>{
 
           Let us team up and bring your software projects to life!
         </p>
-        <button className='rounded border border-gray-700 px-2 py-2 mt-[15px] hover:bg-teal-100'>{"Let's Talk"}</button>
+        <button className='rounded border border-gray-700 px-2 py-2 mt-[15px] hover:bg-teal-100'><Link href="mailto:jan.elnas@gmail.com">{"Let's Talk"}</Link></button>
       </div>
     )
 }

@@ -16,8 +16,7 @@ const Navigation = ()=>{
                 <Link href="/" className={` hover:text-teal-500  ${pathname ==='/'?'border-b-2 text-teal-500':'text-gray-700'}`}>Home</Link>
                 <Link href="/work-experience" className={` hover:text-teal-500  ${pathname ==='/work-experience'?'border-b-2 text-teal-500':'text-gray-700'}`}>Work Experience & Projects</Link>
                 <Link href="/skills" className={` hover:text-teal-500  ${pathname ==='/skills'?'border-b-2 text-teal-500':'text-gray-700'}`}>Skills</Link>
-                <Link href="" className=" hover:text-black text-gray-700">Education</Link>
-                <Link href="" className=" hover:text-black text-gray-700">Contacts</Link>
+                <Link href="/contacts" className={` hover:text-teal-500  ${pathname ==='/contacts'?'border-b-2 text-teal-500':'text-gray-700'}`}>Contacts</Link>
             </div>
         </div>
     )
